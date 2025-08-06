@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8b195;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #f67280;
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-section .btn {
+  background-color: white;
+  color: #f67280;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Products Section */
+.products-section {
+  padding: 50px 20px;
+  background-color: #f8b195;
+  text-align: center;
+}
+
+.products-section h2 {
+  margin-bottom: 20px;
+}
+
+.product-card {
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.product-card .btn {
+  background-color: #f67280;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #355c7d;
+  color: white;
+}
+
+.contact-section form {
+  display: inline-block;
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-section .btn {
+  background-color: white;
+  color: #355c7d;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #6c5b7b;
+  color: white;
+}
+</style>
+  <header>
+    <div class="logo">Skincare Heaven</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section">
+    <h1>Welcome to Skincare Haven</h1>
+    <p>Your one-stop solution for radiant skin.</p>
+    <a href="#products" class="btn">Explore Products</a>
+  </section>
+
+  <section id="products" class="products-section">
+    <h2>Our Products</h2>
+    <h1>FACE ESSENTIALS</h1>
+    <div class="product-card">
+      <img src="https://thefaceshop.in/cdn/shop/files/8_16.jpg?v=1709268307&width=1500" alt="Moisturizer">
+      <h3>Hydrating Moisturizer</h3>
+      <p>Keep your skin soft and supple.</p>
+      <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://theskinstory.in/cdn/shop/files/Moringa_Sunscreen.jpg?v=1731994620"alt="Sunscreen">
+      <h3>SPF 50 Sunscreen</h3>
+      <p>Protect your skin from harmful UV rays.</p>
+      <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://www.benzac.com/au/sites/default/files/styles/cp_product_medium/public/2024-01/BZC_SQUARE_WEB-10%20%281%29.jpg" alt="Cleanser">
+      <h3>Gentle Cleanser</h3>
+      <p>Cleanse without stripping natural oils.</p>
+      <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+    <img src="https://nourishmantra.in/cdn/shop/products/Artboard1_1.jpg?v=1723286396"alt="LipBalm">
+    <h3>Lip balm</h3>
+    <p>lip balm is that it rehydrates your lips. If you're one who tends to suffer from dry lips, you need to ensure that it's constantly moisturised. </p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <hr>
+    <h1><center>HAIR CARE</center></h1>
+    <div class="product-card">
+    <img src="https://images.bblunt.com/catalog/product/c/u/curly-hair-combo.jpg?format=auto&height=600"alt="SHhampoo">
+    <h3>Shampoo</h3>
+    <p>Shampoo is a hair care product that is used to cleanse the scalp </p>
+    <button class="btn">Buy NOw</button>
+    </div>
+    <div class="product-card">
+    <img src="https://naturali.co.in/cdn/shop/files/HFA_370_4e17fbd8-1e17-425e-b665-8b5b1555f201.webp?v=1724139629"alt="Conditioner">
+    <p>put on your hair after you have washed it to make it softer.</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+    <img src="https://www.bluenectar.co.in/cdn/shop/files/GreenTeaHairSerum-1A.jpg?v=1735286204"alt="Serum">
+    <h3>Hair Serum</h3>
+    <p>Serum is a thing that gives shiny and glowing hair</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/51Q26teRncL.jpg"alt="Mask">
+    <h3>Hair Mask</h3>
+    <p>Hair mask after washing the hair</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <hr>
+    <h1><center>EYE CARE</center></h1>
+    <div class="product-card">
+    <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/15973866/2023/8/23/241b05ac-6748-4213-bcad-c06152e833831692770917835-Pilgrim-Retinol-Under-Eye-Night-Cream-with-Hyaluronic-Acid-f-2.jpg"alt="Night cream">
+    <p>Much work in day time,Thus eye can be relaxed</p>
+    <h3>Night Cream</h3>
+    <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+    <img src="https://www.beautetrade.com/uploads/images/mce_uploads/remove-under-eye-bag-dark-circle-removal-cream0-0452524001702379612.jpg"alt="Dark circle removal">
+     <h3>Dark Circle removal</h3>
+    <p> target your under-eye skin troubles without harming your skin's natural health </p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="https://cdn.shopify.com/s/files/1/0455/5862/8516/files/Coffee_Eye_Cream_600x600.jpg?v=1726938463"alt="Puffiness">
+    <h3>Puffiness Removal</h3>
+    <p>The removal of puffiness in your face,smaller the size of face</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+    <img src="https://charmlash.com/wp-content/uploads/2023/01/wholesale-eyelash-extension-cream-remover-eyelash-extension-removal-cream-eyelash-extension-remover-eyelash-extensions-remova-600x600.jpg"alt="Lash removal">
+    <h3>Lash extension removal</h3>
+    <p>Lashes should be naturally beautiful</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <hr>
+    <h1><center>FOOT CARE</center></h1>
+    <div class="product-card">
+        <img src="https://happyherbals.online/cdn/shop/products/FeetCareNSTAAD1.png?v=1668228489&width=1946"alt="foot cream">
+    <h3>Foot cream</h3>
+    <p>Foot cream,no cracks</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+    <img src="https://www.audora.in/cdn/shop/files/Audora_0005_FootCrackcream-01.jpg?v=1687845144"alt="crack cream">
+    <h3>Foot crack cream</h3>
+    <p>Less cracks will show foot beautiful</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <hr> 
+    <h1><center>WINTER CARE</center></h1>
+    <div class="product-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5GVbG4NhZ2m38edVExsg-PVPzKw-MiVxAEA&s"alt="Body Lotion">
+    <h3>Body lotion</h3>
+    <p>Need soft skin,use body lotion</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+    <img src="https://www.health.com/thmb/SHw9LIvSoZu09fAMUJeK46Tavrs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1348473975-f9ac7d89066f41ff9e5bef3a752ff205.jpg"alt="aloevera">
+    <h3>aloevera</h3>
+    <p>Natural aloevera gives natural vibes</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/516R1mqAnfL._AC_UF350,350_QL80_.jpg"alt="Lip balm">
+    <h3>Lip balm/cream</h3>
+    <p>For the dry lips,add soft creams</p>
+    <button class="btn">Buy Now</button>
+    </div>
+    <hr>
+    <h1><center>BEST SELLERS</center></h1>
+    <div class="product-card">
+    <img src="https://trykiya.com/cdn/shop/files/mamaearth-combo.jpg?v=1713940127"alt="mamaearth-combo">
+    <h3>Mamaearth</h3>
+    <p>Goodness Inaide</p>
+</div>
+    <div class="product-card">
+    <img src="https://i0.wp.com/thoughtsthrulens.com/wp-content/uploads/2021/11/best-sellers-hamper.jpg?resize=847%2C565&ssl=1"alt="Deyga">
+    <h3>Deyga Products</h3>
+    <p>100% Pure. We're the real deal!</p>
+    </div>
+    <div class="product-card">
+    <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/8b3a4cef-89d4-480b-b94b-2cc4f1c7be9f.__CR0,0,970,600_PT0_SX970_V1___.jpg"alt="Aqualogica">
+    <h3>Aqualogica</h3>
+    <p>Fresh Start to Glowing Skin.</p>
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Skincare Haven. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
